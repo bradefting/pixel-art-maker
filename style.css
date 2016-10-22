@@ -1,13 +1,17 @@
-* {
-  background-color: #b1b1b1;
+body{
+  background-color: #868686;
 }
 .container {
   display: flex;
 }
 
+h1 {
+  text-align: center;
+}
+
 .main-box {
   height: 600px;
-  width: 70%;
+  width: 700px;
   background-color: #e8e8e8;
   margin: 0px auto;
   border-radius: 25px;
@@ -16,77 +20,125 @@
 }
 
 .main-bottom {
-  /*display: flex;*/
+  display: flex;
+  justify-content: center;
 }
 
-.grid-box {
-  background-color: white;
-  width: 90%;
+/*was .grid-box*/
+.color-boxes {
+  /*background-color: white;*/
+  width: 630px;
   height: 450px;
   margin: 20px auto;
-  border-radius: 15px;
+  /*border-radius: 15px;*/
 }
 
 .box{
   float:left;
-  height:50px;
-  width: 50px;
+  height:10px;
+  width: 10px;
   background-color: white;
   border: 1px black solid;
-
 }
 
-.color-swatches-container {
+.selectorText{
+  text-align: center;
+  margin: 0;
+}
+
+/*used to be .color-swatches-container*/
+.colorSelector {
   display: flex;
   flex-direction: row;
-  /*flex-wrap: wrap;*/
   justify-content: space-around;
 }
 
-.color-swatches {
+/*used to be .color-swatches*/
+.pickAColor {
   width: 25px;
 	height: 25px;
 	border-radius: 12.5px;
   margin: 5px;
-  background-color: #ffda3c;
 }
 
-.white {
-  background: #ffffff;
+.inlineBox {
+  display: inline-block;
 }
 
-.red {
-  background: #d63636;
+.colorIndicator {
+  height: 10px;
+  width: 100px;
+  border: 2px solid black;
+
 }
 
-.orange {
-  background-color: #c3750d;
+#darkRed {
+  background-color: #7e0505;
 }
 
-.yellow {
-  background-color: #dfc121;
+#red{
+  background-color: #f50b25;
 }
 
-.green {
-  background-color: #118627;
+#pink {
+  background-color: #d743c0
 }
 
-.blue {
-  background-color: #196ce7;
+#orange {
+  background-color: #f0881d;
 }
 
-.purple {
-  background-color: #7813eb;
+#orangeYellow {
+  background-color: #f0ae1d;
 }
 
-.pink {
-  background-color: #c61bbf;
+#yellow {
+  background-color: #ebe105;
 }
 
-.black {
-  background-color: #000;
+#lightGreen{
+  background-color: #2db40c;
 }
 
-h1 {
-  text-align: center;
+#darkGreen{
+  background-color: #117712;
 }
+
+#blue {
+  background-color: #1c32c6;
+}
+
+#lightBlue {
+  background-color: #30dbe0;
+}
+
+#lightPurple {
+  background-color: #ac4eed;
+}
+
+#purple {
+  background-color: #6903fc;
+}
+
+#brown {
+  background-color: brown;
+}
+
+#gray {
+  background-color: grey;
+}
+
+#black {
+  background-color: black;
+}
+
+#white{
+  background-color: #ffffff;
+}
+
+
+
+/*not needed bc divs are block?*/
+/*.row {
+  display:block;
+}*/

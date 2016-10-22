@@ -6,39 +6,52 @@
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
     <h1>Brad's Pixel Art</h1>
     <div class="container">
       <main class="main-box">
-
-
-        <section class="grid-box">
-          <!-- <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div> -->
-
-        </section>
-
-        <section class ="main-bottom">
-          <div>
-            <section class="color-swatches-container">
-              <div class="color-swatches red"></div>
-              <div class="color-swatches orange"></div>
-              <div class="color-swatches yellow"></div>
-              <div class="color-swatches green"></div>
-              <div class="color-swatches blue"></div>
-              <div class="color-swatches purple"></div>
-              <div class="color-swatches pink"></div>
-              <div class="color-swatches black"></div>
-            </section>
+        <section class="color-boxes">
+          <div class="row">
+            <div class="inlineBox addDivs">
+              <!-- boxes append here -->
+            </div>
           </div>
         </section>
+  <br>
+        <h3 class="selectorText">Select A Color</h3>
+        <section class ="main-bottom">
+          <div class="row">
+            <div class="inlineBox">
+              <div class="colorSelector">
+                <div class="pickAColor" id="darkRed"></div>
+                <div class="pickAColor" id="red"></div>
+                <div class="pickAColor" id="pink"></div>
+                <div class="pickAColor" id="orange"></div>
+                <div class="pickAColor" id="orangeYellow"></div>
+                <div class="pickAColor" id="yellow"></div>
+                <div class="pickAColor" id="lightGreen"></div>
+                <div class="pickAColor" id="darkGreen"></div>
+                <div class="pickAColor" id="lightBlue"></div>
+                <div class="pickAColor" id="lightPurple"></div>
+                <div class="pickAColor" id="blue"></div>
+                <div class="pickAColor" id="purple"></div>
+                <div class="pickAColor" id="brown"></div>
+                <div class="pickAColor" id="gray"></div>
+                <div class="pickAColor" id="black"></div>
+                <div class="pickAColor" id="white"></div>
+              </div>
+            </div>
+          </div><!--end colorSelector -->
+        </section>
+
+        <section class="row">
+          <div class="inlineBox">
+            <div class="colorIndicator">
+            </div>
+          </div>
+        </section>
+        
       </main>
     </div>
   </body>
