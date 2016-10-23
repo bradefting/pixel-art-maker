@@ -1,7 +1,7 @@
 "use strict";
 var color;
 
-for(var i =0;i<2080;i++){
+for(var i =0;i<1998;i++){
   var newDiv = document.createElement('div');
   newDiv.setAttribute("class", "box");
   var addDivs = document.querySelector('.addDivs');
@@ -13,10 +13,9 @@ var setColor = document.querySelector('.colorSelector');
 
 setColor.addEventListener('click', function(e){
   color =e.target.id;
-  console.log(color, " is color selected");
-
+  console.log(color, "is color selected");
   var colorIndicator = document.querySelector('.colorIndicator');
-  console.log(colorIndicator);
+  // console.log(colorIndicator);
   colorIndicator.style.backgroundColor = color;
 });
 
@@ -25,7 +24,7 @@ var colorBoxes = document.querySelector('.color-boxes');
 
 colorBoxes.addEventListener('click', function(e){
   var divToChange = e.target;
-  console.log(e.target, " target");
+  // console.log(e.target, " target");
   if(divToChange.style.backgroundColor === color){
     divToChange.style.height = "10px";
     divToChange.style.width = "10px";
@@ -37,4 +36,21 @@ colorBoxes.addEventListener('click', function(e){
     divToChange.style.width = "12px";
     divToChange.style.backgroundColor = color;
   }
+});
+
+//clear entire grid with clear button
+var clearGrid = document.querySelector('.clearGrid');
+var newDivs = document.querySelectorAll('.box');
+
+clearGrid.addEventListener('click', function(){
+
+  for(var i=0;i<newDivs.length;i++){
+    if(newDivs[i].style.backgroundColor !== "white"){
+      newDivs[i].style.height = "10px";
+      newDivs[i].style.width = "10px";
+      newDivs[i].style.border = '1px solid black';
+      newDivs[i].style.backgroundColor = 'white';
+    }
+  }
+  // console.log("cleared");
 });

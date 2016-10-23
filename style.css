@@ -9,6 +9,10 @@ h1 {
   text-align: center;
 }
 
+h4 {
+  margin: 5px 15px;
+}
+
 .main-box {
   height: 600px;
   width: 700px;
@@ -22,15 +26,22 @@ h1 {
 .main-bottom {
   display: flex;
   justify-content: center;
+  background-color: #393737;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
 }
 
 /*was .grid-box*/
 .color-boxes {
-  /*background-color: white;*/
-  width: 630px;
+  width: 650px;
   height: 450px;
   margin: 20px auto;
   /*border-radius: 15px;*/
+  clear: left;
 }
 
 .box{
@@ -59,6 +70,7 @@ h1 {
 	height: 25px;
 	border-radius: 12.5px;
   margin: 5px;
+  border: 1px solid black;
 }
 
 .inlineBox {
@@ -66,65 +78,72 @@ h1 {
 }
 
 .colorIndicator {
-  height: 10px;
-  width: 70px;
+  height: 20px;
+  width: 50px;
   border: 2px solid black;
+}
 
+.clearGrid {
+  margin-left: 100px;
 }
 
 #darkRed {
-  background-color: #7e0505;
+  background-color: DarkRed;
 }
 
 #red{
-  background-color: #f50b25;
+  background-color: red;
 }
 
-#pink {
-  background-color: #d743c0
+#hotPink {
+  background-color: HotPink;
 }
 
-#orange {
-  background-color: #f0881d;
+#orangeRed {
+  background-color: orangeRed;
 }
 
-#orangeYellow {
-  background-color: #f0ae1d;
+#gold {
+  background-color: gold;
 }
 
 #yellow {
-  background-color: #ebe105;
+  background-color: Yellow;
 }
 
-#lightGreen{
-  background-color: #2db40c;
+#seaGreen{
+  background-color: SeaGreen;
 }
 
-#darkGreen{
-  background-color: #117712;
+#green{
+  background-color: Green;
 }
 
-#blue {
-  background-color: #1c32c6;
+#mediumBlue {
+  background-color: MediumBlue;
 }
 
-#lightBlue {
-  background-color: #30dbe0;
+#darkOrchid {
+  background-color: DarkOrchid;
 }
 
-#lightPurple {
-  background-color: #ac4eed;
+#deepSkyBlue {
+  background-color: DeepSkyBlue;
 }
 
-#purple {
-  background-color: #6903fc;
+#blueViolet {
+  background-color: BlueViolet;
 }
 
-#brown {
-  background-color: brown;
+#saddleBrown {
+  background-color: SaddleBrown;
 }
 
-#gray {
+#peru {
+  background-color: Peru;
+}
+
+#grey {
   background-color: grey;
 }
 
@@ -133,10 +152,12 @@ h1 {
 }
 
 #white{
-  background-color: #ffffff;
+  background-color: white;
 }
 
-
+#antiqueWhite{
+  background-color: AntiqueWhite;
+}
 
 /*not needed bc divs are block?*/
 /*.row {
