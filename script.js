@@ -1,6 +1,7 @@
 "use strict";
 var color;
 
+// loop builds all grid boxes into .addDivs
 for(var i =0;i<1998;i++){
   var newDiv = document.createElement('div');
   newDiv.setAttribute("class", "box");
@@ -43,14 +44,11 @@ var clearGrid = document.querySelector('.clearGrid');
 var newDivs = document.querySelectorAll('.box');
 
 clearGrid.addEventListener('click', function(){
-
   for(var i=0;i<newDivs.length;i++){
-    if(newDivs[i].style.backgroundColor !== "white"){
       newDivs[i].style.height = "10px";
       newDivs[i].style.width = "10px";
       newDivs[i].style.border = '1px solid black';
       newDivs[i].style.backgroundColor = 'white';
-    }
   }
   // console.log("cleared");
 });
